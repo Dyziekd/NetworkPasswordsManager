@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_background_color">
+
+    <!-- Group name -->
+    <TextView
+        android:id="@+id/groups_list__name"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:textAppearance="@style/groups_list__name_style"/>
+
+    <!-- Security level -->
+    <TextView
+        android:id="@+id/groups_list__security_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingEnd="10dp"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/groups_list__security_level_style"/>
+
+</LinearLayout>

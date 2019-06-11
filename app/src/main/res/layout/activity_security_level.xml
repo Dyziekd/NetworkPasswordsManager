@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.passwordsmanager.Activities.MinorActivities.SecurityLevelActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- SL1 password field -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/changeSL__SL1_password_field_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/changeSL__SL1_password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/secondary_text_light_nodisable"
+                android:hint="@string/sl1_password_field_hint"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- SL2 password field -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/changeSL__SL2_password_field_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/changeSL__SL2_password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/secondary_text_light_nodisable"
+                android:hint="@string/sl2_password_field_hint"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Logout to SL0 button -->
+        <Button
+            android:id="@+id/changeSL_logout_to_SL0_button"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_to_SL0_button_text"
+            android:onClick="logoutToSL0"
+            style="@style/button_style"/>
+
+        <!-- Login to SL1 button -->
+        <Button
+            android:id="@+id/changeSL_login_to_SL1_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_to_SL1_button_text"
+            android:onClick="loginToSL1"
+            style="@style/button_style"/>
+
+        <!-- Login to SL2 button -->
+        <Button
+            android:id="@+id/changeSL_login_to_SL2_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_to_SL2_button_text"
+            android:onClick="loginToSL2"
+            style="@style/button_style"/>
+
+    </LinearLayout>
+</ScrollView>

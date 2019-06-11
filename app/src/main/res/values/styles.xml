@@ -1,0 +1,97 @@
+<resources>
+
+
+    <!-- Base application theme -->
+    <style name="AppThemeNoBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+
+    <style name="AppThemeDefaultBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:buttonTint">@android:color/holo_orange_light</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+    <!-- Button -->
+    <style name="button_style" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/button_background_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+                                                  <!-- TEXTS -->
+
+    <!-- Toolbar text -->
+    <style name="toolbar_text_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- ListView style -->
+    <style name="list_view_style" parent="Base.Widget.AppCompat.ListView">
+        <item name="android:divider">@android:color/holo_green_dark</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- Service name on passwords list -->
+    <style name="passwords_list__service_name_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Passwords on passwords list -->
+    <style name="passwords_list__password_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Group name on groups list -->
+    <style name="groups_list__name_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Security level on groups list -->
+    <style name="groups_list__security_level_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Current group label -->
+    <style name="current_group_label_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:background">@color/current_group_label_background_color</item>
+    </style>
+
+    <!-- Lists headers -->
+    <style name="list_header_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:color/holo_red_dark</item>
+    </style>
+
+    <!-- Last login information text (MainActivity) -->
+    <style name="last_login_info_text_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Password generator text (PasswordGeneratorActivity) -->
+    <style name="password_generator_text_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Add/edit group text (AddEditGroupActivity) -->
+    <style name="add_edit_group_text_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

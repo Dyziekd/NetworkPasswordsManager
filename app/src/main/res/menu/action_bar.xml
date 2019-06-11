@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Add password button -->
+    <item
+        android:id="@+id/action_bar__add_password_button"
+        android:icon="@drawable/add_password_icon"
+        android:title="@string/add_password"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <!-- Add folder button -->
+    <item
+        android:id="@+id/action_bar__add_group_button"
+        android:icon="@drawable/add_group_icon"
+        android:title="@string/add_folder"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <!-- Logout button -->
+    <item
+        android:id="@+id/action_bar__logout_button"
+        android:icon="@drawable/logout_icon"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

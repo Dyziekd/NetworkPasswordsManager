@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.passwordsmanager.Activities.MajorActivities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Register form -->
+        <LinearLayout
+            android:id="@+id/register_form"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Login field -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/generator__password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:hint="@string/login_field_hint"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Email field -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register__email_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:hint="@string/email_field_hint"
+                    android:inputType="textEmailAddress"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password field -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/register__password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:hint="@string/password_field_hint"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Comfirm password field -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/register__confirm_password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:hint="@string/confirm_password_field_hint"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password power bar -->
+            <ProgressBar
+                android:id="@+id/register__password_power_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="0.8"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+            <!-- Password power bar label -->
+            <TextView
+                android:id="@+id/register__password_power_bar_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@android:color/secondary_text_light_nodisable"
+                android:text="@string/password_power_bar_label"
+                android:labelFor="@id/register__password_power_bar"/>
+
+            <!-- SL 1 passsword field -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/register__SL1password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:hint="@string/sl1_password_field_hint"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- SL 1 password power bar -->
+            <ProgressBar
+                android:id="@+id/register__SL1password_power_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="0.8"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <!-- SL 1 password power bar label -->
+            <TextView
+                android:id="@+id/register__SL1password_power_bar_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@android:color/secondary_text_light_nodisable"
+                android:text="@string/sl1_password_power_bar_label"
+                android:labelFor="@id/register__SL1password_power_bar"/>
+
+            <!-- SL 2 password field -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/register__SL2password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:hint="@string/sl2_password_field_hint"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- SL 2 password power bar -->
+            <ProgressBar
+                android:id="@+id/register__SL2password_power_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="0.8"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+            <!-- SL2 2 password power bar label -->
+            <TextView
+                android:id="@+id/register__SL2password_power_bar_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@android:color/secondary_text_light_nodisable"
+                android:text="@string/sl2_password_power_bar_label"
+                android:labelFor="@id/register__SL2password_power_bar"/>
+
+        </LinearLayout>
+
+        <!-- Register button -->
+        <Button
+            android:id="@+id/register__register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/register_form"
+            android:text="@string/register_button_text"
+            android:onClick="attemptRegister"
+            style="@style/button_style"/>
+
+        <!-- Login hyperlink -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register__register_button"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_hyperlink_text"
+            android:onClick="startLoginActivity"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,139 @@
+<resources>
+    <!-- Titles -->
+    <string name="app_name">Network Passwords Manager</string>
+    <string name="login_activity_title">Sign in</string>
+    <string name="register_activity_title">Sign up</string>
+    <string name="security_level_activity_title">Change security level</string>
+    <string name="password_generator_activity_title">Password generator</string>
+    <string name="settings_activity_title">Account Settings</string>
+    <string name="add_password_activity_title">Add password</string>
+    <string name="edit_password_activity_title">Edit password</string>
+    <string name="add_group_activity_title">Add group</string>
+    <string name="edit_group_activity_title">Edit group</string>
+    <string name="change_email_fragment_title">Change email address</string>
+    <string name="change_password_fragment_title">Change password</string>
+    <string name="change_SL1_password_fragment_title">Change security level 1 password</string>
+    <string name="change_SL2_password_fragment_title">Change security level 2 password</string>
+    <string name="change_auto_logout_settings_fragment_title">Change auto logout settings</string>
+    <string name="connection_error_window_title">Connection problem</string>
+    <string name="logout_window_title">Logout</string>
+
+    <!-- Buttons texts -->
+    <string name="login_button_text">Sign in</string>
+    <string name="register_button_text">Sign up</string>
+    <string name="my_passwords_button_text">My passwords</string>
+    <string name="password_generator_button_text">Password generator</string>
+    <string name="account_settings_button_text">Account settings</string>
+    <string name="logout_to_SL0_button_text">Logout to security level 0</string>
+    <string name="login_to_SL1_button_text">Login to security level 1</string>
+    <string name="login_to_SL2_button_text">Login to security level 2</string>
+    <string name="generate_password_button_text">Generate password</string>
+    <string name="generate_random_password_button_text">Random</string>
+    <string name="ok_button_text">OK</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="add_button_text">Add</string>
+    <string name="edit_button_text">Edit</string>
+
+    <!-- Hyperlinks texts -->
+    <string name="registration_hyperlink_text">Don\'t have an acout yet? Register!</string>
+    <string name="login_hyperlink_text">Already have an account? Login!</string>
+
+    <!-- Labels -->
+    <string name="password_power_bar_label">Password power</string>
+    <string name="sl1_password_power_bar_label">Security level 1 password power</string>
+    <string name="sl2_password_power_bar_label">Security level 2 password power</string>
+    <string name="password_power_very_weak">Very weak</string>
+    <string name="password_power_weak">Weak</string>
+    <string name="password_power_good">Good</string>
+    <string name="password_power_strong">Strong</string>
+    <string name="password_power_very_strong">Very strong</string>
+    <string name="password_length_label">Length</string>
+    <string name="big_letters_checkbox_label">Big letters</string>
+    <string name="small_letters_label">Small letters</string>
+    <string name="digits_label">Digits</string>
+    <string name="special_chars_label">Special chars</string>
+    <string name="small_letter_label">Small letter</string>
+    <string name="big_letter_label">Big letter</string>
+    <string name="digit_label">Digit</string>
+    <string name="special_char_label">Special char</string>
+    <string name="password_generator_setup_label">Select the characters from which you want generate password.</string>
+    <string name="password_generator_first_char_label">First char:</string>
+    <string name="auto_logout_checkbox_label">Auto logout</string>
+    <string name="passwords_list_header">Passwords:</string>
+    <string name="groups_list_header">Groups:</string>
+    <string name="last_successful_login_date">Last successful login date:</string>
+    <string name="last_failed_login_date">Last failed login date:</string>
+
+    <!-- Field hints -->
+    <string name="login_field_hint">Login</string>
+    <string name="email_field_hint">Email</string>
+    <string name="new_email_field_hint">New email</string>
+    <string name="password_field_hint">Password</string>
+    <string name="confirm_password_field_hint">Confirm password</string>
+    <string name="new_password_field_hint">New password</string>
+    <string name="sl1_password_field_hint">Security level 1 password</string>
+    <string name="sl2_password_field_hint">Security level 2 password</string>
+    <string name="new_sl1_password_field_hint">New security level 1 password</string>
+    <string name="new_sl2_password_field_hint">New security level 2 password</string>
+    <string name="auto_logout_field_hint">Auto logout time (minutes)</string>
+    <string name="auto_logout_disabled_field_hint">Auto logout disabled</string>
+    <string name="service_name_field_hint">Service name</string>
+    <string name="service_url_field_hint">Service URL</string>
+    <string name="group_name_field_hint">Group name</string>
+
+    <!-- Errors -->
+    <string name="empty_field_error">This field is required!</string>
+    <string name="incorrect_login_or_password_error">Incorrect login or password!</string>
+    <string name="incorrect_email_error">Incorrect email!</string>
+    <string name="incorrect_password_error">Incorrect password!</string>
+    <string name="incorrect_confirm_password_error">Password and confirmed password must be the same!</string>
+    <string name="incorrect_auto_logout_time_error">Incorrect value!</string>
+    <string name="incorrect_url_error">Incorrect URL!</string>
+    <string name="incorrect_SL_error">Incorrect security level! Correct value is 0, 1 or 2.</string>
+    <string name="incorrect_length_error">Incorrect length! Correct value is more than 0 and less than 32.</string>
+    <string name="no_numbers_error">This field must contains only numbers!</string>
+    <string name="login_json_extract_error">An error occurred when trying to sign in. Please try again later.</string>
+    <string name="register_json_extract_error">An error occurred when trying to sign up. Please try again later.</string>
+    <string name="logout_json_extract_error">An error occurred when trying to logout.</string>
+    <string name="sl_json_extract_error">An error occurred when trying to change security level. Please try again later.</string>
+    <string name="change_settings_json_extract_error">An error occurred when trying to change account settings. Please try again later.</string>
+    <string name="add_password_json_extract_error">An error occurred when trying to add password. Please try again later.</string>
+    <string name="edit_password_json_extract_error">An error occurred when trying to edit password. Please try again later.</string>
+    <string name="delete_password_json_extract_error">An error occurred when trying to delete password. Please try again later.</string>
+    <string name="get_passwords_json_extract_error">An error occurred when trying to get passwords. Please try again later.</string>
+    <string name="add_group_json_extract_error">An error occurred when trying to add passwords group. Please try again later.</string>
+    <string name="edit_group_json_extract_error">An error occurred when trying to edit passwords group. Please try again later.</string>
+    <string name="delete_group_json_extract_error">An error occurred when trying to delete passwords group. Please try again later.</string>
+    <string name="get_groups_json_extract_error">An error occurred when trying to get passwords group. Please try again later.</string>
+    <string name="go_to_website_error">Website is not specified!</string>
+
+    <!-- Messages -->
+    <string name="connection_error_window_message">This application needs internet connection!</string>
+    <string name="logout_window_message">Do you really want to logout?</string>
+    <string name="login_dialog_message">Logging in…</string>
+    <string name="register_dialog_message">Signing up…</string>
+    <string name="sl_dialog_message">Changing security level…</string>
+    <string name="change_settings_dialog_message">Changing account\'s settings…</string>
+
+    <!-- Toasts -->
+    <string name="password_generator_checkboxes_unchecked_toast">You must check at least one checkbox to generate password!</string>
+    <string name="enable_auto_logout_toast">Please restart your application to enable auto logout!</string>
+    <string name="logout_inactivity_toast">You have been logged out due to inactivity!</string>
+    <string name="copy_password_toast">Password copied to clipboard</string>
+    <string name="password_expired_toast">Your password is expired!</string>
+
+    <!-- Bars, menus and dialogs options -->
+    <string name="security_level">Security level: </string>
+    <string name="add_password">Add password</string>
+    <string name="add_folder">Add folder</string>
+    <string name="copy_password_to_clipboard">Copy password to clipboard</string>
+    <string name="go_to_website">Go to the website</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Logout</string>
+    <string name="try_again">Try again</string>
+    <string name="exit">Exit</string>
+
+
+
+</resources>

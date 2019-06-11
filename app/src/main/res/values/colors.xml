@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF000000</color>
+
+    <!--Input text underline -->
+    <color name="orange">#c7ffea00</color>
+
+                                                <!-- BACKGROUNDS -->
+    <!-- Toolbar background -->
+    <color name="toolbar_background_color">#131313</color>
+    <!-- Button background -->
+    <color name="button_background_color">#131313</color>
+    <!-- List item background -->
+    <color name="list_item_background_color">#2f3030</color>
+    <!-- Current group label background -->
+    <color name="current_group_label_background_color">#2f3030</color>
+
+
+
+                                                <!-- PASSWORD POWER BARS -->
+
+    <color name="password_power_bar_progress0_color">#FF0000</color>
+    <color name="password_power_bar_progress25_color">#FFAA00</color>
+    <color name="password_power_bar_progress50_color">#FFEE00</color>
+    <color name="password_power_bar_progress75_color">#00FF00</color>
+    <color name="password_power_bar_progress100_color">#00AA00</color>
+
+
+</resources>

@@ -4,7 +4,6 @@
 
     class Password
     {
-
        private $db;
        private $passwords_table= "passwords";
        private $groups_table = "passwords_groups";
@@ -44,15 +43,14 @@
                     $password_lifetime = "'".$password_lifetime."'"; 
                     $expiration_date = "'".$expiration_date."'";
                 }
-
-                // set url address
+                
                 if(empty($service_url_address))
-                    $service_url = 'NULL';
+                    $service_url_address = 'NULL';
                 else
-                    $service_url = "'".$service_url_address."'";
+                    $service_url_address = "'".$service_url_address."'";
 
                 // add new password
-                $query = "INSERT INTO ".$this->passwords_table." (password, service_name, service_url_address, change_reminder, password_lifetime, expiration_date, id_owner, id_passwords_group, created_at) VALUES ('$password', '$service_name', $service_url, '$change_reminder', $password_lifetime, $expiration_date, '$id_owner', $id_passwords_group, NOW())";
+                $query = "INSERT INTO ".$this->passwords_table." (password, service_name, service_url_address, change_reminder, password_lifetime, expiration_date, id_owner, id_passwords_group, created_at) VALUES ('$password', '$service_name', $service_url_address, '$change_reminder', $password_lifetime, $expiration_date, '$id_owner', $id_passwords_group, NOW())";
                 mysqli_query($this->db->getDb(), $query);  
 
                 $json['success'] = 1;
@@ -98,15 +96,9 @@
                     $password_lifetime = "'".$password_lifetime."'"; 
                     $expiration_date = "'".$expiration_date."'";
                 }
-
-                // set url address
-                if(empty($service_url_address))
-                    $service_url = 'NULL';
-                else
-                    $service_url = "'".$service_url_address."'";
-
+                
                 // edit password
-                $query = "UPDATE ".$this->passwords_table." SET password = '$password', service_name = '$service_name', service_url_address = $service_url, change_reminder = '$change_reminder', password_lifetime = $password_lifetime, expiration_date = $expiration_date, id_owner = '$id_owner', id_passwords_group = $id_passwords_group, updated_at = NOW() WHERE id_password = '$id_password'";
+                $query = "UPDATE ".$this->passwords_table." SET password = '$password', service_name = '$service_name', service_url_address = '$service_url_address', change_reminder = '$change_reminder', password_lifetime = $password_lifetime, expiration_date = $expiration_date, id_owner = '$id_owner', id_passwords_group = $id_passwords_group, updated_at = NOW() WHERE id_password = '$id_password'";
                 mysqli_query($this->db->getDB(), $query); 
 
                 $json['success'] = 1;

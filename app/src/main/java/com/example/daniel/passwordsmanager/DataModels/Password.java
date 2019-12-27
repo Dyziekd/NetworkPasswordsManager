@@ -1,7 +1,5 @@
 package com.example.daniel.passwordsmanager.DataModels;
 
-import android.text.TextUtils;
-
 import com.example.daniel.passwordsmanager.PublicFunctions;
 
 import java.text.ParseException;

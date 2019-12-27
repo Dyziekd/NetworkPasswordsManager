@@ -1,10 +1,10 @@
 package com.example.daniel.passwordsmanager.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -30,18 +30,14 @@ public class GroupsAdapter extends ArrayAdapter<Group>
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
         // create new row view
-        View newRow = convertView;
-        if(newRow == null)
-        {
-            LayoutInflater layoutInflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            newRow = layoutInflater.inflate(R.layout.groups_list_item, null);
-        }
+        if(convertView == null)
+            convertView = ((Activity)getContext()).getLayoutInflater().inflate(R.layout.groups_list_item, parent, false);
 
         // create list row elements
         Holder holder = new Holder();
-        holder.name = (TextView)newRow.findViewById(R.id.groups_list__name);
-        holder.securityLevel = (TextView)newRow.findViewById(R.id.groups_list__security_level);
-        newRow.setTag(holder);
+        holder.name = (TextView)convertView.findViewById(R.id.groups_list__name);
+        holder.securityLevel = (TextView)convertView.findViewById(R.id.groups_list__security_level);
+        convertView.setTag(holder);
 
         // get row data
         Group rowData = getItem(position);
@@ -51,7 +47,7 @@ public class GroupsAdapter extends ArrayAdapter<Group>
         holder.securityLevel.setText("Security level: " + String.valueOf(rowData.getSecurityLevel()));
 
         // return new row
-        return newRow;
+        return convertView;
     }
 
     // returns group security level by id

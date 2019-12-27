@@ -3,7 +3,7 @@ package com.example.daniel.passwordsmanager;
 public class Strings
 {
     // server urls
-    public final static String basicURL = "http://192.168.1.2/npm/";
+    public final static String basicURL = "http://192.168.42.106/npm/";
     public final static String loginURL = basicURL + "login.php";
     public final static String registerURL = basicURL + "register.php";
     public final static String logoutURL = basicURL + "logout.php";

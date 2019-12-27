@@ -9,12 +9,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AlertDialog;
 import android.util.Base64;
-import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -52,7 +50,7 @@ public class PublicFunctions
 
             // convert hex to string
             StringBuilder hexString = new StringBuilder();
-            for(int i=0; i<encryptedBytes.length; i++)
+            for(int i = 0; i < encryptedBytes.length; i++)
                 hexString.append(String.format("%02X", encryptedBytes[i]));
 
             // return hash in lower case

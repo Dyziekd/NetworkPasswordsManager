@@ -7,9 +7,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.ContextMenu;
@@ -33,9 +33,9 @@ import com.example.daniel.passwordsmanager.Activities.MinorActivities.AddEditGro
 import com.example.daniel.passwordsmanager.Activities.MinorActivities.AddEditPasswordActivity;
 import com.example.daniel.passwordsmanager.Activities.MinorActivities.SecurityLevelActivity;
 import com.example.daniel.passwordsmanager.Adapters.GroupsAdapter;
+import com.example.daniel.passwordsmanager.Adapters.PasswordsAdapter;
 import com.example.daniel.passwordsmanager.DataModels.Group;
 import com.example.daniel.passwordsmanager.DataModels.Password;
-import com.example.daniel.passwordsmanager.Adapters.PasswordsAdapter;
 import com.example.daniel.passwordsmanager.PublicFunctions;
 import com.example.daniel.passwordsmanager.R;
 import com.example.daniel.passwordsmanager.Strings;
@@ -502,7 +502,7 @@ public class PasswordsActivity extends AppCompatActivity
 
     // initiates array list, adapter and listview for groups
     private void initPasswordsList()
-    {
+      {
         // init passwords adapter
         passwordsAdapter = new PasswordsAdapter(this, R.layout.activity_main, new ArrayList<Password>());
 
@@ -527,10 +527,6 @@ public class PasswordsActivity extends AppCompatActivity
                 }
                 else
                     passwordField.setText("********");
-
-
-
-
             }
         });
         registerForContextMenu(passwordsListView);

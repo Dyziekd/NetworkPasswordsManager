@@ -25,5 +25,6 @@ NPM features:
 
 # Screenshots
 
-![dodaj haslo_Easy-Resize com](https://user-images.githubusercontent.com/48474276/72255876-282e9080-3608-11ea-8a68-155655a0d58a.jpg)
+
+![dodaj haslo_Easy-Resize com](https://user-images.githubusercontent.com/48474276/72255924-3e3c5100-3608-11ea-86ae-1722f7d814f2.jpg)
 

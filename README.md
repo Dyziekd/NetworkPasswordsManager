@@ -25,8 +25,5 @@ NPM features:
 
 # Screenshots
 
-![Rejestracja](https://user-images.githubusercontent.com/48474276/72255510-35974b00-3607-11ea-89db-c838461f851a.png)
-![Menu](https://user-images.githubusercontent.com/48474276/72255671-a0e11d00-3607-11ea-8024-c73db5693cce.png)
-![Lista haseł](https://user-images.githubusercontent.com/48474276/72255507-34661e00-3607-11ea-94d2-781576aa6750.png)
-![Dodawanie hasła](https://user-images.githubusercontent.com/48474276/72255500-2fa16a00-3607-11ea-9b70-f29ccd4cbe5e.png)
-![Generator haseł](https://user-images.githubusercontent.com/48474276/72255506-3334f100-3607-11ea-8b06-a2721c173cef.png)
+![dodaj haslo_Easy-Resize com](https://user-images.githubusercontent.com/48474276/72255876-282e9080-3608-11ea-8a68-155655a0d58a.jpg)
+

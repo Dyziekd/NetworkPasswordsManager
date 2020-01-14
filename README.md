@@ -17,6 +17,7 @@ NPM features:
 - passwords generator 
 ------------------------------------------------------------------------------------
 - uses SQL database 
+- uses Volley library to communicate with database (REST API)
 - needs internet connection 
 - account password and security level passwords are hashed (using SHA-512) 
 - passwords stored in database are encrypted (using AES-256) 
